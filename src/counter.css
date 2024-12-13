@@ -1,0 +1,81 @@
+/* Apply a gradient background for a modern look */
+* {
+    background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Style the container */
+.container {
+    background-color: #222;
+    color: #151414;
+    padding: 20px;
+    margin: 50px auto;
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Style the buttons */
+button {
+    width: 120px;
+    height: 50px;
+    background-color: #4CAF50;
+    color: #101010;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+/* Add hover effects to buttons */
+button:hover {
+    background-color: #5e5e5e; /* Slightly darker gray for better contrast */
+    color: #c01616; /* Change text color to white for better visibility */
+    transform: translateY(-3px) scale(1.05); /* Add a subtle scaling effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a soft shadow */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+
+/* Style the button container */
+#btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+    row-gap: 15px;
+    margin-top: 20px;
+}
+
+/* Add spacing to buttons */
+button + button {
+    margin-left: 10px;
+}
+
+/* Add some animation for hover state */
+button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Add a hover effect to the container */
+.container:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Add a modern look to the body */
+body {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
